@@ -17,9 +17,9 @@ const dataChannelType = "pipechat-data"
 
 // ServerConfig bundles what Listen needs to accept one incoming connection.
 type ServerConfig struct {
-	Addr               string // e.g. ":2222"
-	HostKey            ssh.Signer
-	PublicKeyCallback  func(ssh.ConnMetadata, ssh.PublicKey) (*ssh.Permissions, error)
+	Addr              string // e.g. ":2222"
+	HostKey           ssh.Signer
+	PublicKeyCallback func(ssh.ConnMetadata, ssh.PublicKey) (*ssh.Permissions, error)
 }
 
 // Listen blocks until a single peer connects and opens the data channel,
